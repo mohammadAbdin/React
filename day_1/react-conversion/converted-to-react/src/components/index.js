@@ -1,0 +1,7 @@
+export {default as FormInput} from './Form/FormInput'
+export {default as PasswordInput} from './Form/PasswordInput'
+export {default as Avatar} from './RegisterModal/Avatar'
+export {default as AvatarIcon} from './RegisterModal/AvatarIcon'
+export {default as ModalBackBtn} from './RegisterModal/ModalBackBtn'
+export {default as RegisterModalNavbar} from './RegisterModal/RegisterModalNavbar'
+export {default as AvatarsContainer} from './RegisterModal/AvatarsContainer'
