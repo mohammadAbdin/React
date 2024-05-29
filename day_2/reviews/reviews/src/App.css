@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --primary-500: #645cff;
+  --personImageSize: 200px;
+
+}
+
+body {
+  font-family: "Times New Roman", serif;
+
+  background-color: #fff8f8;
+}
+
+.person {
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  height: auto;
+  background-color: white;
+  border: 1px solid #c9c9c9;
+  box-shadow: #c9c9c9;
+  padding: 50px;
+  /* gap: 10px; */
+  border-radius: 20px;
+}
+
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.person-img {
+  width: var(--personImageSize);
+  height: var(--personImageSize);
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  border-radius: 50%;
+  background: var(--primary-500);
+  color: var(--white);
+  transform: translateY(-25%);
+}
+
+.image-container::before {
+  content: '';
+  width: var(--personImageSize);
+  height: var(--personImageSize);
+  background: #645cff;
+  position: absolute;
+  margin: -5px 10px;
+  border-radius: 50%;
+}
+
+.quote-icon,
+.quote {
+  position: absolute;
+  margin: -150px 0px;
+
+}
+
+.person h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.person .job {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+  margin: 5px 0px;
+}
+
+.person .text {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(68, 68, 68);
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.FaChevrons {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.person button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-500);
+  margin: 5px 0px;
+  text-align: center;
+  border: 1px solid var(--primary-500);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.person button:hover {
+  background-color: rgb(80, 76, 181);
+  color: #fff8f8;
+  cursor: pointer;
+}
