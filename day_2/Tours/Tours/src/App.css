@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+:root {
+  --primary-color: #308242;
+
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  margin-bottom: 0px;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.loading {
+  color: black;
+}
+
+.Tours {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.tour {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.tour img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background-color: white;
+}
+
+.details h4 {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.ReadMore {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.details button {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.details button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.refresh {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: 0px;
+  width: 100px;
+  border-radius: 10px;
+  top: -10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  background-color: #194523;
+  border: 1px solid #fff;
+}
