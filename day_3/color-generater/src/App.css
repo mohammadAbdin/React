@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.input {
+  background-color: white;
+  border: 0px;
+}
+
+.text {
+  color: black;
+}
+
+.Colors_container {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.colorDiv {
+  height: 200px;
+  width: 200px;
+  pad: 10px;
+}
